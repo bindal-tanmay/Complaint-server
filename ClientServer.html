@@ -42,20 +42,16 @@
     </div>
 
     <script>
-        // JavaScript for handling form submission (this is just a client-side example)
+    
         document.getElementById('complaintForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
-            // Collect form data
             const formData = new FormData(e.target);
 
-            // You can now send this data to a server for processing
-            // Here, we are just displaying it for demonstration purposes
             for (const [key, value] of formData.entries()) {
                 console.log(key + ': ' + value);
             }
 
-            // Clear the form (optional)
             e.target.reset();
         });
     </script>
